@@ -1,0 +1,108 @@
+body{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    padding-top: 90px;
+}
+*{
+    box-sizing: border-box;
+}
+.main{
+    margin: auto;
+    width: fit-content;
+    border-radius: 10%;
+    
+}
+.header{
+    font-size: 30px;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+}
+.card1{
+    margin: 0;
+    padding: 50px;
+    background: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.learnmore1{
+    background: hsl(0, 0%, 95%);
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    font-weight: 700;
+    color: hsl(31, 77%, 52%);
+}
+.learnmore1:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: solid 2px;
+    cursor: pointer;
+
+}
+.card2{
+    margin: 0;
+    padding: 50px;
+    background: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+ 
+}
+.learnmore2{
+    background: hsl(0, 0%, 95%);
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    font-weight: 700;
+    color: hsl(184, 100%, 22%);
+    
+}
+.learnmore2:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: solid 2px;
+    cursor: pointer;
+}
+.card3{
+    margin: 0;
+    padding: 50px;
+    background: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+.learnmore3{
+    background: hsl(0, 0%, 95%);
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    font-weight: 700;
+    color: hsl(179, 100%, 13%);
+    
+}
+.learnmore3:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: solid 2px;
+    cursor: pointer;
+
+}
+@media  ( min-width : 768px) {
+    
+    .main{
+        width: fit-content;
+        display: grid;
+        grid-template-columns: repeat(3 1fr);
+        margin: auto;
+    }
+    .card2{
+        grid-column-start: 2;
+    }
+    .card3{
+        grid-column-start: 3;
+    }
+    .attribution{
+        align-self: center;
+        grid-column-start: 2;
+    }
+    
+}
